@@ -23,7 +23,8 @@ module.exports = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       'gray': '#F7F9FC',
-      'gray-light': "#79819A"
+      'gray-light': "#79819A",
+      'gray-lght-test': "#E2E6EE"
     },
   },
   plugins: [],
