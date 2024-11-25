@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'dmsans': ["roboto", "sans-serif"],
+      'dmsans': ["DmSans-Bold", "sans-serif"],
       'nunito': ['nunito', 'sans-serif'],
       'roboto': ['Roboto', 'sans-serif']
     },
@@ -22,6 +22,8 @@ module.exports = {
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
+      'gray': '#F7F9FC',
+      'gray-light': "#79819A"
     },
   },
   plugins: [],
