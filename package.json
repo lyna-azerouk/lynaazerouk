@@ -4,6 +4,7 @@
         "build:css": "tailwindcss -i ./src/style.css -o ./src/output.css --watch"
     },
     "dependencies": {
+        "@preline/carousel": "^2.5.0",
         "accordion-js": "^3.3.4"
     }
 }
