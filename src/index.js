@@ -26,25 +26,38 @@ document.addEventListener('DOMContentLoaded', function () {
   const project3 = document.getElementById('project3');
   const project4 = document.getElementById('project4');
   const projects = document.getElementById('projects');
-
+  
   let currentIndex = 0;
-  const Items = [project1, project2, project3, project4, project5]
-
+  const Items = [project1, project2, project3, project4, project5];
+  
   function showNext() {
-    Items[currentIndex].remove();
-    Items[currentIndex+2].style.display = 'block'
-    currentIndex = currentIndex + 1;
+    if (currentIndex < Items.length - 2) {
+      Items[currentIndex].style.display = 'none';
+      Items[currentIndex + 1].style.display = 'none';
+      currentIndex++;
+      Items[currentIndex].style.display = 'block';
+      Items[currentIndex + 1].style.display = 'block';
+    }
   }
-
+  
   function showPrev() {
-    Items[currentIndex + 1].remove();
-    projects.insertBefore(Items[currentIndex -1], Items[currentIndex])
-    currentIndex = currentIndex - 1;
+    if (currentIndex > 0) {
+      Items[currentIndex].style.display = 'none';
+      Items[currentIndex + 1].style.display = 'none';
+      currentIndex--;
+      Items[currentIndex].style.display = 'block';
+      Items[currentIndex + 1].style.display = 'block';
+    }
   }
-
-  const prevButton =  document.getElementById('slider-button-left');
-  const nextButton =  document.getElementById('slider-button-right');
+  
+  const prevButton = document.getElementById('slider-button-left');
+  const nextButton = document.getElementById('slider-button-right');
   prevButton.addEventListener('click', showPrev);
   nextButton.addEventListener('click', showNext);
+  
+  // Initialize the first two items to be displayed
+  Items[currentIndex].style.display = 'block';
+  Items[currentIndex + 1].style.display = 'block';
+  
 
 });
