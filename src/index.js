@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const projects = document.getElementById('projects');
 
   let currentIndex = 0;
-  const Items = [project1, project2, project3, project4]
+  const Items = [project1, project2, project3, project4, project5]
 
   function showNext() {
     Items[currentIndex].remove();
