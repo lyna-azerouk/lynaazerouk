@@ -8,8 +8,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       'dmsans': ["DmSans-Bold", "sans-serif"],
-      'nunito': ['nunito', 'sans-serif'],
-      'roboto': ['Roboto', 'sans-serif']
+      'custom': ['CustomFont', 'sans-serif'],
+      'CustomFonDMSansmedium': ['CustomFontDMSans-medium', 'sans-serif']
     },
     colors: {
       transparent: 'transparent',
@@ -26,7 +26,8 @@ module.exports = {
       'bermuda': '#78dcca',
       'gray': '#F7F9FC',
       'gray-light': "#79819A",
-      'gray-lght-test': "#E2E6EE"
+      'gray-lght-test': "#E2E6EE",
+      'gray-dark': "#2E2E48",
     },
   },
   plugins: [],
