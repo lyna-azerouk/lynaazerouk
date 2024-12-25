@@ -29,6 +29,9 @@ module.exports = {
       'gray-lght-test': "#E2E6EE",
       'gray-dark': "#2E2E48",
     },
+    animation: {
+      'fadeinright': 'fade-in-right 1s ease-in-out 0.25s 1',
+    },
   },
   plugins: [],
 

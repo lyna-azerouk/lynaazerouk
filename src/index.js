@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const project2 = document.getElementById('project2');
   const project3 = document.getElementById('project3');
   const project4 = document.getElementById('project4');
-  const projects = document.getElementById('projects');
-  
+  const project5 = document.getElementById('project5');
+
   let currentIndex = 0;
   const Items = [project1, project2, project3, project4, project5];
   
@@ -37,6 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
       currentIndex++;
       Items[currentIndex].style.display = 'block';
       Items[currentIndex + 1].style.display = 'block';
+      Items[currentIndex + 1].classList.add('ml-10');
+      Items[currentIndex].classList.remove('ml-10');
+      Items[currentIndex].classList.add('transition-all', '-translate-x-2', 'duration-900', 'ease-out');
+      Items[currentIndex].style.transition = 'opacity 0.9s ease-out, transform 0.9s ease-out';
     }
   }
   
@@ -44,9 +48,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (currentIndex > 0) {
       Items[currentIndex].style.display = 'none';
       Items[currentIndex + 1].style.display = 'none';
+      Items[currentIndex].classList.add('transition-all', 'translate-x-2', 'duration-900', 'ease-out');
+      Items[currentIndex].style.transition = 'opacity 0.9s ease-out, transform 0.9s ease-out';
+      Items[currentIndex].classList.remove('ml-10');
+
       currentIndex--;
       Items[currentIndex].style.display = 'block';
       Items[currentIndex + 1].style.display = 'block';
+      Items[currentIndex + 1].classList.add('ml-10');
     }
   }
   
@@ -54,8 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const nextButton = document.getElementById('slider-button-right');
   prevButton.addEventListener('click', showPrev);
   nextButton.addEventListener('click', showNext);
-  
-  // Initialize the first two items to be displayed
+
   Items[currentIndex].style.display = 'block';
   Items[currentIndex + 1].style.display = 'block';
   
