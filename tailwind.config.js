@@ -5,7 +5,11 @@ module.exports = {
     "./src/*.{html,js}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '128': '36rem',
+      }
+    },
     fontFamily: {
       'dmsans': ["DmSans-Bold", "sans-serif"],
       'custom': ['CustomFont', 'sans-serif'],
@@ -28,6 +32,7 @@ module.exports = {
       'gray-light': "#79819A",
       'gray-lght-test': "#E2E6EE",
       'gray-dark': "#2E2E48",
+      'dark': "#47516B"
     },
     animation: {
       'fadeinright': 'fade-in-right 1s ease-in-out 0.25s 1',
