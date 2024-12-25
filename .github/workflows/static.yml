@@ -36,8 +36,8 @@ jobs:
 
       - name: Prepare Deployment
         run: |
-          # Copy files from src to the root of the deployment directory
           cp -r src/* .
+          sed -i 's|\.\./images/|images/|g' index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
