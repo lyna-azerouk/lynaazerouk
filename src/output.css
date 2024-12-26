@@ -875,36 +875,12 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-t-2 {
   border-top-width: 2px;
 }
 
 .border-solid {
   border-style: solid;
-}
-
-.border-secondary-dark {
-  --tw-border-opacity: 1;
-  border-color: rgb(46 46 72 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-dark {
-  --tw-border-opacity: 1;
-  border-color: rgb(35 35 57 / var(--tw-border-opacity, 1));
-}
-
-.border-gray {
-  --tw-border-opacity: 1;
-  border-color: rgb(247 249 252 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-lght-test {
-  --tw-border-opacity: 1;
-  border-color: rgb(226 230 238 / var(--tw-border-opacity, 1));
 }
 
 .bg-gray {
@@ -942,9 +918,24 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#A478E8\] {
+  --tw-gradient-from: #A478E8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(164 120 232 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-\[\#232339\] {
   --tw-gradient-to: rgb(35 35 57 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #232339 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-\[\#8D75EC\] {
+  --tw-gradient-to: rgb(141 117 236 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #8D75EC var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-\[\#516CF7\] {
+  --tw-gradient-to: #516CF7 var(--tw-gradient-to-position);
 }
 
 .to-\[\#B1BDFB\] {
@@ -953,6 +944,11 @@ video {
 
 .bg-\[length\:200\%_100\%\] {
   background-size: 200% 100%;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .bg-\[position\:15\%_0\%\] {
@@ -1072,13 +1068,13 @@ video {
   color: rgb(81 108 247 / var(--tw-text-opacity, 1));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .shadow-lg {
