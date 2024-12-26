@@ -30,8 +30,10 @@ module.exports = {
       'bermuda': '#78dcca',
       'gray': '#F7F9FC',
       'gray-light': "#79819A",
+      'gray-lighter': "#ACB1C3",
       'gray-lght-test': "#E2E6EE",
-      'gray-dark': "#2E2E48",
+      'gray-dark': "#232339",
+      'secondary-dark': "#2E2E48",
       'dark': "#47516B"
     },
     animation: {
